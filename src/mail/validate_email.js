@@ -6,7 +6,7 @@ const validateEmail = email => {
       if( validation ) {
         resolve( email )
       } else {
-        reject( `User not saved: "${email}" is not avalid email` )
+        reject( `User not saved: "${email}" is not a valid email` )
       }
     })
   })

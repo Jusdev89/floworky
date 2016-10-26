@@ -22,8 +22,6 @@ router.post( '/register', ( request, response ) => {
 
   validateEmail( email )
     .then( validEmail => {
-      console.log( 'Email is valid', validEmail )
-
       register( User, validEmail, password )
     })
     .then( user => response.redirect( '/accounts/verify' ))
